@@ -1,4 +1,3 @@
-from tkinter import *
 
 
 class Paddle:
@@ -29,12 +28,12 @@ class Paddle:
     def move_left(self, event=None):
         cords = self.canvas.coords(self.id) # gets the x1 y1 x2 y2 of the rectangle
         if cords[0] > 20: # if the left corner of the rectangle "cords[0]"
-                         # doesn't touch the edge of the left screen "0", you can move.
-            self.canvas.move(self.id, -self.move_speed, 0) # move the rectangle -20 in x
+                          # doesn't touch the edge of the left screen "0", you can move.
+            self.canvas.move(self.id, -self.move_speed, 0) # move the rectangle -20 (left) in x, y=0 doesn't move
 
     def move_right(self, event=None):
         cords = self.canvas.coords(self.id)
         if cords[2] < self.canvas_width - 20: # if the right corner of the paddle x2 "cords[2]"
-                                         # doesn't touch the edge of the right screen "self.canvas_width",
-                                         # you can move.
+                                              # doesn't touch the edge of the right screen "self.canvas_width",
+                                              # you can move to the right
             self.canvas.move(self.id, self.move_speed, 0)
