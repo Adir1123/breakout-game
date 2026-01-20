@@ -9,11 +9,6 @@ A fully playable version of the classic **Breakout** arcade game built with **Py
 - Scoring system and level progression
 - Clean object-oriented structure
 
-## Screenshots
-
-> 📌 You can add a screenshot here in the future using:  
-> `![Screenshot](path/to/screenshot.png)`
-
 ## How to Run
 
 1. Make sure Python 3 is installed.
